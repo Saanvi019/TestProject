@@ -15,7 +15,7 @@ export const getUsersForSidebar = async (req, res) => {
     email: u.email,
     profilePic: u.profilePic,
     fullName: u.name,
-    internalRole: u.role,// 👈 explicit contract change
+    internalRole: null,// 👈 explicit contract change
   }))
 );
   } catch (error) {
